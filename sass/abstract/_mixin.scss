@@ -1,0 +1,16 @@
+@mixin border-bottom {
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid $color-white;
+    width: 15rem;
+    margin: 0 auto;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 0.8rem 3.8rem rgba(0, 0, 0, 0.3),
+    0.1rem 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
+}

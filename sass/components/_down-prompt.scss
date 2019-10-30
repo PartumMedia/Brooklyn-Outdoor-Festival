@@ -1,0 +1,12 @@
+.down-prompt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.5rem;
+  animation: promptDown 2.5s 1.7s ease-in-out backwards infinite;
+  z-index: 2;
+
+  svg {
+    font-size: 8rem;
+  }
+}

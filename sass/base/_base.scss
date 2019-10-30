@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  position: relative;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #343a40;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: lighten($color-grey, 40%);
+}
+
+a {
+  text-decoration: none;
+  color: lighten($color-grey, 30%);
+
+  &:hover {
+    color: $color-grey;
+  }
+}

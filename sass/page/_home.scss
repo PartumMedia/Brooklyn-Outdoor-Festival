@@ -1,0 +1,167 @@
+.hero-image {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url("/imgs/adult-boy-child-325521.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+  &-text {
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+
+    h1 {
+      letter-spacing: $letter-space-5;
+      padding-bottom: 2rem;
+      animation: moveInLeft 0.5s ease-out;
+    }
+
+    p {
+      letter-spacing: $letter-space-5;
+      font-size: 3rem;
+      padding-bottom: 4rem;
+      animation: moveInRight 0.5s ease-out;
+    }
+
+    &-btn {
+      font-size: 3rem;
+      padding: 1rem 2rem;
+      animation: moveInButton 0.5s 1s ease-out backwards;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    p:hover {
+      color: lighten($color-grey, 20%);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.program-description {
+  &-text {
+    font-size: 1.5rem;
+
+    h2 {
+      padding-top: 3rem;
+      color: $color-white;
+
+      @include border-bottom;
+    }
+
+    p {
+      padding-top: 2.5rem;
+      letter-spacing: 0.2rem;
+      line-height: 2.7rem;
+
+      &:last-child {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  &-image {
+    width: 30%;
+    padding: 3rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+    }
+  }
+}
+
+.film {
+  &-list-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+      url("/imgs/abandoned-ancient-antique-235986.jpg");
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-list-title {
+    margin: 12rem 0 3rem;
+    font-size: 4rem;
+    @include border-bottom;
+  }
+}
+
+.form-social-container {
+  padding: 0 5rem;
+}
+
+.form {
+  background: $color-dark;
+  margin: 4rem auto;
+  border: 2px solid $color-light;
+  border-radius: 3px;
+  padding: 5rem;
+
+  input {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  &-check-input {
+    margin: 0 !important;
+  }
+
+  &-check-label {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  &-title {
+    margin-bottom: 4rem;
+    @include border-bottom;
+  }
+
+  &-btn {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.social {
+  &-title {
+    text-transform: uppercase;
+    margin: 12rem auto 4rem;
+  }
+
+  &-links {
+    a {
+      margin: 2rem 0;
+    }
+
+    // svg {
+    //   padding: 0.8rem;
+    //   border: 1px solid red;
+    //   border-radius: 100rem;
+    // }
+
+    &-title {
+      @include border-bottom;
+    }
+  }
+}
+
+.news-links {
+  &-title {
+    @include border-bottom;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+}

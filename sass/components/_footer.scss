@@ -1,0 +1,14 @@
+.footer {
+  background: darken($color-dark, 13%);
+  padding: 2rem;
+
+  .developer {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    color: $color-grey;
+  }
+}

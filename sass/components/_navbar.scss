@@ -1,0 +1,62 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 2rem;
+  padding: 0;
+  background-color: rgba($color: #000000, $alpha: 0) !important;
+
+  &-toggler {
+    border-radius: 10rem;
+    padding: 2rem;
+    margin: 1rem 1.5rem;
+    border: 0.2rem solid rgba($color-dark, 1) !important;
+    background-color: rgba($color-dark, 1);
+    box-shadow: 0 0.8rem 3.8rem rgba(0, 0, 0, 0.3),
+      0.1rem 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
+    animation: showNav 0.5s 1.8s ease-out backwards;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &-icon {
+      padding: 1.7rem;
+    }
+  }
+
+  &-brand {
+    font-size: 2rem;
+
+    img {
+      width: 6rem;
+    }
+  }
+}
+
+.nav {
+  &-item {
+    background-color: rgba($color-dark, 0.9);
+    border-bottom: 1px solid $color-grey;
+    box-shadow: 0 0.8rem 3.8rem rgba(0, 0, 0, 0.3),
+      0.1rem 0.8rem 1.2rem rgba(0, 0, 0, 0.4);
+    text-align: left;
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100vw;
+    height: 15vh;
+
+    &:last-child {
+      border-radius: 0 0 0.8rem 0.8rem;
+      border: none;
+    }
+  }
+
+  &-link {
+    color: $color-light !important;
+
+    &:hover {
+      color: lighten($color-grey, 30%) !important;
+    }
+  }
+}

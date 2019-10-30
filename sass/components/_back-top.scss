@@ -1,0 +1,14 @@
+.back-top {
+  position: absolute;
+  right: 2rem;
+  bottom: 7rem;
+  animation: promptDown 2.5s 1.7s ease-in-out backwards infinite;
+
+  svg {
+    color: #ffffff;
+
+    &:hover {
+      color: lighten($color-grey, 20%);
+    }
+  }
+}
